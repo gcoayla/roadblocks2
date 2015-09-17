@@ -1,0 +1,28 @@
+void delay(int secs);
+void menu();
+void logo();
+void paso(int level);
+void over(int level);
+struct result left(int a[2],char matriztuto[][20],int lon[2]);
+struct result right(int a[2],char matriztuto[][20],int lon[2]);
+struct result down(int a[2],char matriztuto[][20],int lon[2]);
+struct result up(int a[2],char matriztuto[][20],int lon[2]);
+int move();
+void comp(int a[2],char matriztuto[][20],int level,int lon[2]);
+void tutorial();
+void nivel1();
+void nivel2();
+void nivel3();
+void nivel4();
+void nivel5();
+void nivel6();
+void nivel7();
+void logo();
+void tuto();
+void levels(int AVICCI);
+void creditos();
+void menu();
+void ganador();
+void perdedor();
+void ganaste();
+

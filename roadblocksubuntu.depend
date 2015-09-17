@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1442462258 source:c:\users\gonzalo\desktop\roadblocksubuntu\road.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string>
+	<ctype.h>
+	"lib.h"
+
+1442450000 c:\users\gonzalo\desktop\roadblocksubuntu\lib.h
+
+1442467508 source:h:\roadblocksubuntu\road.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string>
+	<ctype.h>
+	"lib.h"
+
+1442450000 h:\roadblocksubuntu\lib.h
+
