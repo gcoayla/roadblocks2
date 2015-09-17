@@ -798,8 +798,7 @@ void creditos(){
 
 		cout<<" Created by :"<<endl;
 		cout<<"				Gonzalo Coayla Zuniga"<<endl;
-		cout<<"				Vanessa Macedo"<<endl;
-		cout<<" Company :"<<endl;
+		cout<<" Company :ME.INC"<<endl;
 		cout<<"				"<<endl;
 		delay(1);
 		system("cls");
