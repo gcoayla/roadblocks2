@@ -21,3 +21,14 @@
 
 1442450000 h:\roadblocksubuntu\lib.h
 
+1442494683 source:c:\users\alumno-g\desktop\roadblocksubuntu\road.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<string>
+	<ctype.h>
+	<windows.h>
+	"lib.h"
+
+1442494686 c:\users\alumno-g\desktop\roadblocksubuntu\lib.h
+

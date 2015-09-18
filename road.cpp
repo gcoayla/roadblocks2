@@ -1,14 +1,11 @@
 #include <iostream>
 #include <stdlib.h>
 #include<conio.h>
-#include <time.h>
 #include <string>
 #include <ctype.h>
+#include <windows.h>
 #include "lib.h"
 using namespace std;
-void delay(int secs) {
-  for(int i = (time(NULL) + secs); time(NULL) != i; time(NULL));
-}
 struct result{
     int a[2];
     char matriztuto[20][20];
@@ -47,7 +44,7 @@ void paso(int level){
 			levels(AVICII);
 		else{
             cout<<"that is not a valid option"<<endl;
-			delay(2);
+			Sleep(2000);
 			paso(level);
 		}
 	}
@@ -83,7 +80,7 @@ void over(int level){
 		menu();
 	else{
         cout<<" That is not a valid option"<<endl;
-		delay(2);
+		Sleep(2000);
 		over(level);
 	}
 }
@@ -98,7 +95,7 @@ struct result left(int a[2],char matriztuto[][20],int lon[2]){
         }
 		cout<<" "<<endl;
 	}
-	delay(1);
+	Sleep(200);
 	if (matriztuto[a[0]][a[1]-1]==char(219)){
         l.a[0]=a[0];
         l.a[1]=a[1];
@@ -162,7 +159,7 @@ struct result right(int a[2],char matriztuto[][20],int lon[2]){
         }
         cout<<" "<<endl;
 	}
-	delay(1);
+	Sleep(200);
 	if (matriztuto[a[0]][a[1]+1]==char(219)){
         l.a[0]=a[0];
         l.a[1]=a[1];
@@ -225,7 +222,7 @@ struct result down(int a[2],char matriztuto[][20],int lon[2]){
         }
 		cout<<" "<<endl;
 	}
-	delay(1);
+	Sleep(200);
 	if (matriztuto[a[0]+1][a[1]]==char(219)){
         l.a[0]=a[0];
         l.a[1]=a[1];
@@ -287,7 +284,7 @@ struct result up(int a[2],char matriztuto[][20],int lon[2]){
         }
 		cout<<" "<<endl;
 	}
-	delay(1);
+	Sleep(200);
 	if (matriztuto[a[0]-1][a[1]]==char(219)){
         l.a[0]=a[0];
         l.a[1]=a[1];
@@ -423,7 +420,7 @@ void comp(int a[2],char matriztuto[][20],int level,int lon[2]){
 
 	else{
         cout<<" That is not a valid option"<<endl;
-		delay(2);
+		Sleep(2000);
 		comp(a,matriztuto,level,lon);
 	}
 }
@@ -732,7 +729,7 @@ void tuto(){
 		nivel1();
 	else{
 		cout<<" That is not a valid option"<<endl;
-		delay(2);
+		Sleep(2000);
 		tuto();}
 }
 
@@ -800,7 +797,7 @@ void creditos(){
 		cout<<"				Gonzalo Coayla Zuniga"<<endl;
 		cout<<" Company :ME.INC"<<endl;
 		cout<<"				"<<endl;
-		delay(1);
+		Sleep(300);
 		system("cls");
 	}
 	menu();
@@ -838,7 +835,7 @@ void menu(){
 	else{
 		cout<<" "<<endl;
 		cout<<" This not a valid option"<<endl;
-		delay(2);
+		Sleep(2000);
 		menu();
 	}
 }
@@ -902,7 +899,7 @@ void ganador(){
 	cout<<"-----------------------X:::X----------------------------------------------"<<endl;
 	cout<<"-----------------------X:X:X----------------------------------------------"<<endl;
 	cout<<"------------------------XXX-----------------------------------------------"<<endl;
-	delay(2);
+	Sleep(2000);
 	system("cls");
 }
 
@@ -938,7 +935,7 @@ void perdedor(){
 	cout<<"--------:XX:XXXXXXX::XX:XXXXXXXX:X:---------------------------------------"<<endl;
 	cout<<"----------XXXXXXXXX:XXXXXXXXXXXXX-----------------------------------------"<<endl;
 	cout<<"-----------:XXXXXXXXX--XXXXXXX:-------------------------------------------"<<endl;
-	delay(2);
+	Sleep(2000);
 	system("cls");
 }
 
@@ -963,7 +960,7 @@ void ganaste(){
 	cout<<"/    |    \\     /   |        \\ |    |   \\ "<<endl;
 	cout<<"\\_______  /\\___/   /_______  / |____|_  /"<<endl;
 	cout<<"		\\/                 \\/         \\/ "<<endl;
-	delay(3);
+	Sleep(2500);
 	menu();
 }
 

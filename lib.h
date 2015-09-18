@@ -1,4 +1,3 @@
-void delay(int secs);
 void menu();
 void logo();
 void paso(int level);
